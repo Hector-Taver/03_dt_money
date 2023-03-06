@@ -22,6 +22,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - ReactJS
 - Styled Components
+- RadixUI
 
 ## 💻 Projeto
 
