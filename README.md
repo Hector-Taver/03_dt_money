@@ -24,6 +24,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Styled Components
 - RadixUI
 - JSON Server
+- React Hook Form
+- Zod
 
 ## 💻 Projeto
 
