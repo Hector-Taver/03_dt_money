@@ -15,6 +15,30 @@
       "category": "Alimentação",
       "price": 50,
       "createdAt": "2023-03-07T17:23:56.079Z"
+    },
+    {
+      "description": "Placa gráfica",
+      "price": 5000,
+      "category": "Hardware",
+      "type": "outcome",
+      "createdAt": "2023-03-07T21:47:54.662Z",
+      "id": 3
+    },
+    {
+      "description": "Desenvolvimento de app mobile",
+      "price": 6000,
+      "category": "Desenvolvimento",
+      "type": "income",
+      "createdAt": "2023-03-07T22:20:39.623Z",
+      "id": 4
+    },
+    {
+      "description": "Pastel",
+      "price": 10,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-03-07T22:21:37.999Z",
+      "id": 5
     }
   ]
 }
