@@ -8,7 +8,26 @@ import { SummaryCard, SummaryContainer } from "./styles";
 
 export function Summary() {
   const theme = useTheme();
-  const { transactions } = useContext(TransactionsContext)
+  const { transactions } = useContext(TransactionsContext);
+
+  const summary = transactions.reduce(
+    (acc, transaction) => {
+      if (transaction.type === "income") {
+        acc.income += transaction.price;
+        acc.total += transaction.price;
+      } else {
+        acc.outcome += transaction.price;
+        acc.total -= transaction.price;
+      }
+
+      return acc;
+    },
+    {
+      income: 0,
+      outcome: 0,
+      total: 0,
+    }
+  );
 
   return (
     <SummaryContainer>
@@ -18,7 +37,7 @@ export function Summary() {
           <ArrowCircleUp size={32} color={theme["green-300"]} />
         </header>
 
-        <strong>R$ 999.999,99</strong>
+        <strong>{summary.income}</strong>
       </SummaryCard>
 
       <SummaryCard>
@@ -27,17 +46,37 @@ export function Summary() {
           <ArrowCircleDown size={32} color={theme["red-300"]} />
         </header>
 
-        <strong>R$ 999.999,99</strong>
+        <strong>{summary.outcome}</strong>
       </SummaryCard>
 
-      <SummaryCard>
-        <header>
-          <span>Total</span>
-          <CurrencyDollar size={32} color={theme.white} />
-        </header>
+      {summary.total > 0 ? (
+        <SummaryCard variant="green">
+          <header>
+            <span>Total</span>
+            <CurrencyDollar size={32} color={theme.white} />
+          </header>
 
-        <strong>R$ 999.999,99</strong>
-      </SummaryCard>
+          <strong>{summary.total}</strong>
+        </SummaryCard>
+      ) : summary.total < 0 ? (
+        <SummaryCard variant="red">
+          <header>
+            <span>Total</span>
+            <CurrencyDollar size={32} color={theme.white} />
+          </header>
+
+          <strong>{summary.total}</strong>
+        </SummaryCard>
+      ) : (
+        <SummaryCard variant="neutral">
+          <header>
+            <span>Total</span>
+            <CurrencyDollar size={32} color={theme.white} />
+          </header>
+
+          <strong>{summary.total}</strong>
+        </SummaryCard>
+      )}
     </SummaryContainer>
   );
 }
