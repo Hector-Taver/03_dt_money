@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O DT Money é uma aplicação para gerenciamento de gastos onde é possível visualizar a entrada, saída e o total de dinheiro na conta.
+O DT Money é uma aplicação para gerenciamento de gastos onde é possível visualizar a entrada, saída, total de dinheiro na conta e o histórico de transações.
 
 ## 🔖 Layout
 
