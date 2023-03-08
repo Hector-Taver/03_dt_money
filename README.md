@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🚀 Como executar
 
-Para executar a aplicação é necessário rodar os seguintes comandos:
+Para executar a aplicação é necessário usar os seguintes comandos no terminal:
 - `npm install` para instalar as dependências da aplicação.
 - `npm run dev:server` para iniciar o JSON Server.
 - `npm run dev` para executar a aplicação.
