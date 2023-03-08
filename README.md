@@ -7,7 +7,8 @@ Segundo projeto desenvolvido durante o bootcamp Ignite da Rocketseat.
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>
 </p>
 
 <br>
@@ -16,7 +17,11 @@ Segundo projeto desenvolvido durante o bootcamp Ignite da Rocketseat.
   <img alt="projeto DT Money" src=".github/preview.jpg" width="100%">
 </p>
 
-## 🚀 Tecnologias
+## 💻 Projeto
+
+O DT Money é uma aplicação para gerenciamento de gastos onde é possível visualizar a entrada, saída, total de dinheiro na conta e o histórico de transações.
+
+## ✨ Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -28,9 +33,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Zod
 - Axios
 
-## 💻 Projeto
+## 🚀 Como executar
 
-O DT Money é uma aplicação para gerenciamento de gastos onde é possível visualizar a entrada, saída, total de dinheiro na conta e o histórico de transações.
+Para executar a aplicação é necessário rodar os seguintes comandos:
+- `npm install` para instalar as dependências da aplicação.
+- `npm run dev:server` para iniciar o JSON Server.
+- `npm run dev` para executar a aplicação.
 
 ## 🔖 Layout
 
